@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.asyf</groupId>
+        <artifactId>java-demo</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>spring-demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>spring-demo</name>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>freemarker-demo</module>
+        <module>poi-demo</module>
+        <module>mybatis-plus-demo</module>
+        <module>redis-demo</module>
+        <module>springboot-demo</module>
+        <module>rabbitmq-demo</module>
+        <module>springboot-webservice</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "mybatis-3-config.dtd" >
+<configuration>
+
+    <settings>
+        <!-- 打印查询语句 -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <!-- 全局参数 -->
+        <!-- 使全局的映射器启用或禁用缓存。 -->
+        <setting name="cacheEnabled" value="true"/>
+        <!--解决，查询返回结果含null没有对应字段值问题-->
+        <setting name="callSettersOnNulls" value="true"/>
+    </settings>
+
+    <!--该路径是拦截器文件的路径 dao.Interceptor是拦截器文件的包名称-->
+    <!--    <plugins>-->
+    <!--        <plugin interceptor="com.asyf.demo.config.MybatisSqlLogInterceptorceptor"/>-->
+    <!--    </plugins>-->
+
+</configuration>
